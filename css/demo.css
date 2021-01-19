@@ -222,7 +222,7 @@ main {
 	align-items: center;*/
 	min-height: 100vh;
 	margin: 0 auto;
-	pointer-events: none;
+	/*pointer-events: none;*/
 }
 
 .content--fixed {
@@ -1014,7 +1014,7 @@ a.demo--current {
 	background-size: cover;
 	width: 100%;
 	height: 100vh;
-	position: fixed;
+	
 	top: 0;
 	left: 0;
 }
@@ -1093,8 +1093,7 @@ a.demo--current {
 }
 
 .cubo-mkta{
-	background-color: #e6e6e6;
-
+	/*background-color: #e6e6e6;*/
 	position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1108,8 +1107,73 @@ a.demo--current {
     min-height: 240px;
     margin-right: 2px;
     margin-bottom: 2px;
-    overflow: hidden;
+    pointer-events: auto;
+    cursor: pointer;
 }
+.cubo-mkta img{
+	margin: auto;
+}
+.mkta-color1{
+	background: #18328D;
+}
+.mkta-color2{
+	background: #fff;
+}
+.mkta-color3{
+	background: #1555D0;
+}
+.mkta-color4{
+	background: #fff;
+}
+.mkta-color5{
+	background: #fff;
+}
+
+/*PARA LA SECCION DE CONTACTENOS */
+.fondo-contact{
+	/*background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1468070/snowy-background.jpeg");*/
+	/*background-color: rgb(242, 199, 68);*/
+	background-position: 50% 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+.titulo-contact{
+	font-family: 'Poppins', sans-serif;
+	text-align: left;
+	font-size: 80px;
+	font-weight: 600;
+	line-height: 100px;
+	/*color: #000;*/
+}
+.subtitle-contact{
+	font-family: 'Poppins', sans-serif;
+	font-size: 36px;
+	margin-top: 100px;
+	/*color: #000;*/
+
+}
+.ct2-contact{
+	display: flex;	
+}
+.blok-cl{
+	margin-right: 290px;
+}
+.blok-contact p{
+	color: #999;
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	/*color: #000;*/
+}
+.blok-contact a{
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+}
+.redfix{
+	color: #F5090C;
+}
+/*FIN PARA LA SECCION DE CONTACTENOS */
 
 
 
