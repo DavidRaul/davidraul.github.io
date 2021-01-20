@@ -1268,6 +1268,15 @@ a.demo--current {
 	.portfolio-home p{
 		font-size: 28px;
 	}
+	.ct-mktas{
+		flex-direction: column;
+	}
+	.cubo-mkta{
+		width: 100%;
+	}
+	.cubo-mkta img{
+		width: 74%;
+	}
 }
 
 
