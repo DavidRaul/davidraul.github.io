@@ -1278,6 +1278,17 @@ a.demo--current {
 	.cubo-mkta img{
 		width: 74%;
 	}
+	.titulo-contact{
+		font-size: 40px;
+		line-height: 55px;
+	}
+	.subtitle-contact{
+		font-size: 19px;
+		margin-top: 37px;
+	}
+	.ct2-contact{
+		flex-direction: column;
+	}
 }
 
 
