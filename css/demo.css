@@ -1130,6 +1130,12 @@ a.demo--current {
 }
 
 /*PARA LA SECCION DE CONTACTENOS */
+.portfolio-tema-contacto {
+	/*border: 1px solid #fff;*/
+	margin: 0 auto;
+	margin-top: 80px;
+	width: 80%;
+}
 .fondo-contact{
 	/*background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1468070/snowy-background.jpeg");*/
 	/*background-color: rgb(242, 199, 68);*/
@@ -1261,6 +1267,9 @@ a.demo--current {
 }
 
 @media screen and (max-width: 568px) {
+	.portfolio-tema-contacto{
+		margin-top: 16px;
+	}
 	.portfolio-home{
 		width: 76%;
 		margin: auto;
