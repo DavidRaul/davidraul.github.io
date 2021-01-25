@@ -1150,6 +1150,7 @@ a.demo--current {
 .about-right p{
 	font-size: 32px;
 	padding-left: 40px;
+	transition: all 0.5s ease;
 }
 .about-right p:hover{
 	color: red;
@@ -1330,6 +1331,15 @@ a.demo--current {
 	.ct2-contact{
 		flex-direction: column;
 	}
+
+
+	.about-left img{
+		width: 74%;
+	}
+	.about-right p{
+		font-size: 13px;
+	}
+
 }
 
 
