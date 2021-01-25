@@ -1139,8 +1139,16 @@ a.demo--current {
 .about-right{
 	margin-top: 5%;
 }
+.about-left p{
+	font-style: italic;
+	font-size: 15px;
+	margin-bottom: 0px;
+}
+.about-left span{
+	font-size: 14px;
+}
 .about-right p{
-	font-size: 40px;
+	font-size: 32px;
 	padding-left: 40px;
 }
 .about-right p:hover{
