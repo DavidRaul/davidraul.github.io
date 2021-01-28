@@ -1115,18 +1115,49 @@ a.demo--current {
 }
 .mkta-color1{
 	background: #18328D;
+	/*opacity: 0.6;*/
+	transition: all 0.5s ease;
+}
+.mkta-color1:hover{
+	opacity: 1;
+	border: 13px solid #fff;
+
 }
 .mkta-color2{
 	background: #fff;
+	/*opacity: 0.6;*/
+	transition: all 0.5s ease;
+}
+.mkta-color2:hover{
+	opacity: 1;
+	border: 13px solid #4E4488;
 }
 .mkta-color3{
 	background: #1555D0;
+	/*opacity: 0.6;*/
+	transition: all 0.5s ease;	
+}
+.mkta-color3:hover{
+	opacity: 1;
+	border: 13px solid #DC6428;
 }
 .mkta-color4{
 	background: #fff;
+	/*opacity: 0.6;*/
+	transition: all 0.5s ease;
+}
+.mkta-color4:hover{
+	opacity: 1;
+	border: 13px solid #ccc;
 }
 .mkta-color5{
-	background: #fff;
+	background: #6fd750;
+	/*opacity: 0.6;*/
+	transition: all 0.5s ease;
+}
+.mkta-color5:hover{
+	opacity: 1;
+	border: 13px solid #fff;
 }
 
 /* ------------------------------- */
