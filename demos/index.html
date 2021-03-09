@@ -8,8 +8,8 @@
 <body>
 	<script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/item-series.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<!-- <script src="https://code.highcharts.com/modules/exporting.js"></script> -->
+<!-- <script src="https://code.highcharts.com/modules/export-data.js"></script> -->
 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
 <style>
@@ -54,13 +54,19 @@ input[type="number"] {
 </style>
 
 <figure class="highcharts-figure">
+    <div>
+        <p>Conozca el perfil de los congresistas virtualmente electos y descubra toda su trayectoria política. Al 100% de actas contabilizadas. <br>Fuente: Onpe</p>
+    </div>
     <div id="container"></div>
-    <p class="highcharts-description">
+    <!-- <p class="highcharts-description">
         Chart showing representatives in the German Parliament. The chart is
         using the <code>item</code> series type with a semi circle layout.
         Item charts create a number of items corresponding to the value of
         each data point.
-    </p>
+
+        Conozca el perfil de los congresistas virtualmente electos y descubra toda su trayectoria política. Al 100% de actas contabilizadas. Fuente: Onpe
+
+    </p> -->
 </figure>
 
 <script>
@@ -71,11 +77,11 @@ input[type="number"] {
     },
 
     title: {
-        text: 'Highcharts item chart'
+        text: 'Elecciones Generales'
     },
 
     subtitle: {
-        text: 'Parliament visualization'
+        text: '2020'
     },
 
     legend: {
@@ -83,16 +89,16 @@ input[type="number"] {
     },
 
     series: [{
-        name: 'Representatives',
+        name: 'Representantes',
         keys: ['name', 'y', 'color', 'label'],
         data: [
-            ['The Left', 69, '#BE3075', 'Accion Popular'],
-            ['Social Democratic Party', 153, '#EB001F', 'Alianza para el progreso'],
-            ['Alliance 90/The Greens', 67, '#64A12D', 'Fuerza Popular'],
-            ['Free Democratic Party', 80, '#FFED00', 'Frepap'],
-            ['Christian Democratic Union', 200, '#000000', 'Union por el Peru'],
-            ['Christian Social Union in Bavaria', 46, '#008AC5', 'Podemos peru'],
-            ['Alternative for Germany', 94, '#009EE0', 'Somos Peru']
+            ['Accion Popular', 69, '#BE3075', 'Accion Popular'],
+            ['Alianza para el progreso', 153, '#EB001F', 'Alianza para el progreso'],
+            ['Fuerza Popular', 67, '#64A12D', 'Fuerza Popular'],
+            ['Frepap', 80, '#FFED00', 'Frepap'],
+            ['Union por el Peru', 200, '#000000', 'Union por el Peru'],
+            ['Podemos peru', 46, '#008AC5', 'Podemos peru'],
+            ['Somos Peru', 94, '#009EE0', 'Somos Peru']
         ],
         dataLabels: {
             enabled: true,
