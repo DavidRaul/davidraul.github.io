@@ -1,0 +1,1094 @@
+body{
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: #000;
+}
+#social {
+    margin-right: 0px !important;
+}
+
+/** fonts **/
+
+@font-face {
+    font-family: "GuardianEgyp-Regular";
+
+
+    src: url(fonts/GuardianEgyp-Regular.eot#iefix) format("embedded-opentype"),
+        url(fonts/GuardianEgyp-Regular.woff2) format("woff2"),
+        url(fonts/GuardianEgyp-Regular.woff) format("woff"),
+        url(fonts/GuardianEgyp-Regular.ttf) format("truetype"),
+        url(fonts/GuardianEgyp-Regular.otf) format("otf"),
+        url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes-2/fonts/GuardianEgyp-Regular.svg#GuardianEgyp-Regular) format("svg")
+
+    /*src: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes-2/fonts/GuardianEgyp-Regular.eot#iefix) format("embedded-opentype"),
+        url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes-2/fonts/GuardianEgyp-Regular.woff2) format("woff2"),
+        url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes-2/fonts/GuardianEgyp-Regular.woff) format("woff"),
+        url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes-2/fonts/GuardianEgyp-Regular.ttf) format("truetype"),
+        url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes-2/fonts/GuardianEgyp-Regular.otf) format("otf"),
+        url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes-2/fonts/GuardianEgyp-Regular.svg#GuardianEgyp-Regular) format("svg")*/
+}
+@font-face {
+    font-family: 'guardianegyp-bold';
+    font-weight: normal;
+    src: 
+url('fonts/GuardianEgyp-Bold.woff') format('woff'),
+url('fonts/GuardianEgyp-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'georgia-regular';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/Georgia-Regular.ttf.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/Georgia-Regular.ttf.woff2') format('woff2'), /* Super Modern Browsers */
+        url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/Georgia-Regular.ttf.woff') format('woff'), /* Pretty Modern Browsers */
+        url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/Georgia-Regular.ttf.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'georgia-bold';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/georgia-bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/georgia-bold.woff') format('woff'), /* Pretty Modern Browsers */
+}
+
+
+@font-face {
+    font-family: 'roboto-lightLight';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/Roboto-Light.woff2') format('woff2'), /* Super Modern Browsers */
+        url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/Roboto-Light.woff') format('woff'), /* Pretty Modern Browsers */
+        url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/Roboto-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'roboto-medium';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/Roboto-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+        url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/Roboto-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+        url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/Roboto-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'chronicledisplay-light';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/ChronicleTextG1-Roman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/ChronicleTextG1-Roman.woff2') format('woff2'), /* Super Modern Browsers */
+        url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/ChronicleTextG1-Roman.woff') format('woff'), /* Pretty Modern Browsers */
+        url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/ChronicleTextG1-Roman.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'chronicledisplay-bold';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/ChronicleDisplay-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/ChronicleDisplay-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/ChronicleDisplay-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+        url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/ChronicleDisplay-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/icomoon.eot?yiyid2');
+    src:  url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/icomoon.eot?yiyid2#iefix') format('embedded-opentype'),
+      url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/icomoon.ttf?yiyid2') format('truetype'),
+      url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/icomoon.woff?yiyid2') format('woff'),
+      url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/icomoon.svg?yiyid2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-logoEc:before {
+    content: "\e900";
+  }
+  .icon-download:before {
+    content: "\e901";
+  }
+  .icon-star:before {
+    content: "\e902";
+  }
+  .icon-mail4:before {
+    content: "\ea86";
+  }
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-whatsapp:before {
+    content: "\ea93";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  .icon-youtube:before {
+    content: "\ea9d";
+  }
+  .icon-pinterest:before {
+    content: "\ead1";
+  }
+  .icon-linkedin:before {
+    content: "\0137";
+  }
+
+hr {
+    margin-top: 5px;
+    margin-bottom: 2rem;
+    border: 0;
+    color: #707070;
+    border-top: 1px solid #707070;
+}
+
+/* header comercio */
+header {
+    position: fixed;
+    height: 46px;
+    width: 100%;
+    background: #000;
+    top: 0;
+    z-index: 99;
+    display: table;
+}
+.header-comercio {
+    background: #000;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+.ctn-header-comercio {
+    margin: 0 auto;
+    max-width: 990px;
+    text-align: left;
+    vertical-align: middle;
+    position: relative;
+    padding: 6px 10px;
+}
+.ctn-header-comercio a {
+    display: inline-block;
+    color: #FFF;
+    margin-top: 0;
+}
+.ctn-header-comercio .logo-comercio i {
+    font-size: 18px;
+}
+.boton-especiales{
+    font: 700 14px/16px Arial;
+}
+.boton-especiales:hover{
+    color: #ffd543;
+    text-decoration: underline;
+}
+.cruz {
+    display: inline-block;
+    width: 12px;
+    position: relative;
+    height: 12px;
+    top: 1px;
+}
+.cruz:before, .cruz:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background: #ffca00;
+}
+.cruz:before {
+    left: 50%;
+    width: 2px;
+    margin-left: -1px;
+    height: 100%;
+}
+.cruz:after {
+    top: 50%;
+    height: 2px;
+    margin-top: -1px;
+    width: 100%;
+}
+#social {
+    float: right;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: table;
+    height: 100%;
+}
+#social ul {
+    vertical-align: middle;
+    display: table-cell;
+}
+#social ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+#social ul li a i {
+    font-size: 18px;
+}
+/* fin de header comercio */
+.clear{
+    clear: both;
+}
+/*Banners de publicidad*/
+.container-top{
+    margin: 42px 0 0 0;
+    padding: 10px 0;
+    height: auto;
+    text-align: center;
+}
+.container-caja3{
+    display: none;
+}
+.lateral-izq{
+    display: inline-block;
+    padding: 15px 0;
+    width: 12%;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    height: 620px;
+    position: -webkit-sticky;
+    position: fixed;
+    top: 30px;
+    left: 0;
+}
+.lateral-der{
+    display: inline-block;
+    padding: 15px 0;
+    width: 12%;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    height: 620px;
+    position: -webkit-sticky;
+    position: fixed;
+    top: 30px;
+    right: 0;
+}
+.container-zocalo{
+    max-width: 728px;
+    height: auto;
+    z-index: 2147483646;
+    position: fixed;
+    margin: 20px auto 0 auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+/*Fin banners de publicidad*/
+.clear{
+    clear: both;
+}
+.container{
+    max-width: 1000px;
+}
+.grid{
+    margin: 30px auto 130px auto;
+}
+.auspicios{
+    max-width: 540px;
+}
+.auspicios-nota{
+    max-width: 740px;
+}
+.cont-titulo{
+    color:#000;
+}
+.titulo{
+    font: 500 70px/99px 'chronicledisplay-bold';
+}
+.titulo-nota{
+    font: 500 57px/57px 'chronicledisplay-bold';
+}
+
+/*h3{
+    font: 500 43px/50px 'chronicledisplay-bold';
+    color: #B81F23;
+    max-width: 840px;
+    margin: 30px 0px;
+}*/
+
+.bajada{
+    font: 500 22px/25px 'roboto-light';
+}
+.selecciona{
+    font: 500 17px/22px 'roboto-light';
+    color: #9B9B9B;
+}
+.fila-2{
+    margin-top: -6.5rem;
+}
+.volada{
+    font: 500 27px/30px 'chronicledisplay-bold';
+    color: #000;
+}
+.leyenda{
+    font: 500 20px/27px 'georgia-regular';
+    color: #6C6C6C;
+    padding-right: 320px;
+}
+.protagonista{
+    max-width: 210px;
+    float: left;
+    padding-right: 20px;
+}
+.autor{
+    font: 500 50px/50px 'chronicledisplay-bold';
+    color: #FF0000;
+}
+.box-crema{    
+    background-color: #E8E0C3;
+    padding: 50px 110px 10px 30px;
+    margin-top: 50px;
+}
+    .parrafo-1crema{
+    font: 500 22px/25px 'georgia-bold';
+    }
+.cont-parrafos{    
+    color: #000;
+}
+.parrafo-1{
+    font: 500 25px/28px 'chronicledisplay-bold';
+}
+.parrafo-2{
+    font: 500 24px/25px 'georgia-bold'
+}
+.parrafo{
+    font: 500 20px/30px 'GuardianEgyp-Regular';
+}
+h4{
+    font: 500 42px/30px 'chronicledisplay-bold';
+    display: inline-block;
+}
+h5{
+    font: 500 22px/30px 'georgia-bold';
+}
+/* Grid */
+.content {
+    overflow: hidden
+}
+.content .content-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    /*height: 99%;*/
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s
+}
+.content:hover .content-overlay {
+    opacity: 1
+}
+img {
+    /*box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);*/
+}
+.content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s
+}
+.content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1
+}
+.content-title {
+    font: 500 38px/38px 'chronicledisplay-bold';
+    color: #fff;
+}
+.content-subtitle, .content-anio {
+    color: #FFD524;
+}
+.content-subtitle {
+    font: 500 22px/22px 'chronicledisplay-bold';
+}
+
+    .content-subtitle-peq {
+        color: #FFD524;
+    }
+    .content-subtitle-peq {
+        font: 500 19px/20px 'chronicledisplay-bold';
+    }
+    .content-subtitle-peq span{
+        color: #FFF;
+    }
+
+.content-anio{
+    font: 500 33px/22px 'chronicledisplay-bold';
+}
+.content-creditos{
+    font: 500 22px/22px 'chronicledisplay-light';
+    color: #fff;
+}
+.fadeIn-bottom {
+    top: 80%
+}
+.person strong{
+    color: #898989;
+}
+.person{
+    font-size: 15px;
+    color: #898989;
+}
+
+/*----------PARA MI PORTAFOLIO-----------*/
+h1{
+    font-family: 'guardianegyp-bold';
+    font-size: 52px;
+}
+h2{
+    font-family: 'guardianegyp-bold';
+    font-size: 42px;
+}
+h3{
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'GuardianEgyp-Regular'
+}
+h4{
+    font: 20px/1.2 'GuardianEgyp-Regular';
+    font-weight: bold;
+}
+p{
+    font: 500 18px/30px "GuardianEgyp-Regular";
+}
+
+ul>li{
+    font: 500 18px/30px "GuardianEgyp-Regular";
+}
+
+.ico-linkedin img{
+    width: 27px;
+}
+
+.tit-clinica{
+    text-align: left;
+    /*margin-top: 80px;*/
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+
+
+.ct-general{
+    max-width : 1000px;
+    margin: 0 auto;
+}
+
+.top-block-space{
+    margin-top: 80px;
+}
+
+.opinion1{
+    /*padding: 180px 0px 180px 0px;*/
+    margin-top: 14vw;
+    margin-bottom: 14vw;
+}
+.enfatiz-texto{
+    margin-top: 14vw;
+    margin-bottom: 14vw;
+}
+.big-letra{
+    font-family: 'GuardianEgyp-Regular';
+    /*font-size: 40px;*/
+    font-size: 30px;
+    line-height: 50px;
+    color: #1f1f1f;
+}
+.mt-titles{
+    margin-top: 60px;
+}
+
+.thumbs-detalles{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.sh-img{
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.mapa-stake{
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+.box-hallasgo{
+
+}
+.curly-section {
+  padding-top: 52px;
+  padding-bottom: 160px;
+  background-color: #f5f5f5;
+  background-image: url('../img/clinica/shape-tinia-top.png'), url('../img/clinica/shape-tinia-bottom.png');
+  background-position: 50% 0px, 50% 100%;
+  background-size: auto, auto;
+  background-repeat: repeat-x, repeat-x;
+}
+.curly-section.yellow {
+    margin-bottom: -80px;
+    padding-top: 100px;
+    padding-bottom: 180px;
+    background-color: #ffd543;
+    color: rgba(0, 0, 0, 0.8);
+}
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 24px 30px 20px;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 15px 35px 0 rgb(0 0 0 / 10%);
+    color: #333;
+}
+.card p{
+    font: 500 20px/30px "GuardianEgyp-Regular";
+    font-weight: bold;
+    color: #333;
+}
+.card span{
+    font: 500 16px/24px "GuardianEgyp-Regular";
+    color: #333;
+}
+
+.idea-slogan{
+    margin-top: 14vw;
+    margin-bottom: 14vw;
+}
+.idea-slogan p{
+    font-size: 40px;
+    text-align: center;
+}
+.idea-slogan span{
+    font-size: 120px;
+    text-align: center;
+    display: block;
+    font-family: "GuardianEgyp-Regular";
+}
+
+.idea-slogan-2{
+    margin-top: 20px;
+}
+.idea-slogan-2 p{
+    font-size: 28px;
+    text-align: center;
+}
+.idea-slogan-2 span{
+    font-size: 40px;
+    text-align: center;
+    display: block;
+    font-family: "GuardianEgyp-Regular";
+}
+
+.white{
+    color: white;
+}
+
+.insight-bold{
+    font-size: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-family: "GuardianEgyp-Regular";
+    font-style: italic;
+    display: block;
+}
+.insight-detalle{
+    font-size: 30px;
+    text-align: center;
+    color: #949191;
+    line-height: 40px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.prop-de-valor{
+    font-size: 27px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "GuardianEgyp-Regular";
+    font-style: italic;
+    display: block;
+}
+.prop-de-valor span{
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.valor-space{
+    background-color: #f8f8f8;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-bottom: 80px;
+    /*margin-top: 80px;*/
+}
+
+.cuadroimagen{
+    width: 340px;
+    height: 240px;
+    background-color: black;
+
+}
+.titulo-enfatiz{
+    margin-bottom: 90px;
+    text-align: center;
+    font-size: 50px;
+}
+.que-es-zoe p{
+    margin-top: 20px;
+    text-align: center;
+}
+.que-es-zoe strong{
+    color: #000;
+    font-size: 21px;
+}
+
+.pilares img{
+    margin: auto;
+    display: block;
+}
+.pilares span{
+    display: block;
+    text-align: center;
+    font-family: "GuardianEgyp-Regular";
+    font-size: 23px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.pilares p{
+    text-align: center;
+}
+.mt-proc-tip{
+    margin-top: 100px;
+}
+.proceso-tipo{
+    background: #ffd543;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    display: table;
+}
+.proceso-tipo p{
+    color: #000;
+    text-align: center;
+    font-family: 'guardianegyp-bold';
+    font-size: 52px;
+}
+
+.wrap-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.txt-anima {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  /*font-size: 24px;*/
+  /*margin-bottom: 40px;*/
+}
+.txt-anima:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -20px;
+  height: 2px;
+  background-color: #000;
+  -webkit-animation: heading-before 4s ease infinite;
+          animation: heading-before 4s ease infinite;
+}
+.txt-anima:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  height: 2px;
+  background-color: #000;
+  -webkit-animation: heading-after 4s ease infinite;
+          animation: heading-after 4s ease infinite;
+}
+
+/*//////// Animations ////////*/
+@-webkit-keyframes heading-before {
+  0% {
+    right: auto;
+    width: 0;
+    left: 0;
+  }
+  10% {
+    width: 50%;
+  }
+  50% {
+    width: 0;
+    left: 100%;
+  }
+  51% {
+    width: 0;
+    right: 0;
+    left: auto;
+  }
+  60% {
+    width: 50%;
+  }
+  99% {
+    width: 0;
+    right: 100%;
+    left: auto;
+  }
+  100% {
+    right: auto;
+    width: 0;
+    left: 0;
+  }
+}
+@keyframes heading-before {
+  0% {
+    right: auto;
+    width: 0;
+    left: 0;
+  }
+  10% {
+    width: 50%;
+  }
+  50% {
+    width: 0;
+    left: 100%;
+  }
+  51% {
+    width: 0;
+    right: 0;
+    left: auto;
+  }
+  60% {
+    width: 50%;
+  }
+  99% {
+    width: 0;
+    right: 100%;
+    left: auto;
+  }
+  100% {
+    right: auto;
+    width: 0;
+    left: 0;
+  }
+}
+@-webkit-keyframes heading-after {
+  0% {
+    left: auto;
+    width: 0;
+    right: 0;
+  }
+  10% {
+    width: 50%;
+    left: auto;
+  }
+  50% {
+    width: 0;
+    right: 100%;
+    left: auto;
+  }
+  51% {
+    width: 0;
+    left: 0;
+    right: auto;
+  }
+  60% {
+    width: 50%;
+  }
+  99% {
+    width: 0;
+    left: 100%;
+    right: atuo;
+  }
+  100% {
+    left: auto;
+    width: 0;
+    right: 0;
+  }
+}
+@keyframes heading-after {
+  0% {
+    left: auto;
+    width: 0;
+    right: 0;
+  }
+  10% {
+    width: 50%;
+    left: auto;
+  }
+  50% {
+    width: 0;
+    right: 100%;
+    left: auto;
+  }
+  51% {
+    width: 0;
+    left: 0;
+    right: auto;
+  }
+  60% {
+    width: 50%;
+  }
+  99% {
+    width: 0;
+    left: 100%;
+    right: atuo;
+  }
+  100% {
+    left: auto;
+    width: 0;
+    right: 0;
+  }
+}
+
+.proto{
+    background-color: #000;
+    padding-top: 60px;
+}
+.globos{
+    margin-top: 50px;
+}
+.frame-proto{
+    border-radius: 20px;
+}
+
+mark{
+    background-color: black;
+    color: white;
+}
+
+footer{
+    margin-top: 70px;
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+footer p{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+/*----------FIN PARA MI PORTAFOLIO-------*/
+
+
+/* Fin Grid */
+@media screen and (max-width: 1366px) {
+
+}
+@media screen and (max-width: 1024px) {
+    .wfb-tabcalc-wrapper{
+        margin: 0 auto;
+        position: relative;
+        width: 980px;
+        display: inline-block;
+    }
+    .lateral-izq, .lateral-der{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    /*Banners de publicidad*/
+    .container-top {
+        padding: 10px 0 5px 0
+    }
+    .container-caja3{
+        display: block;
+        margin: 10px auto;
+        padding-bottom: 140px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .parrafo-2 {
+    font: 500 22px/22px 'georgia-bold';
+    }
+    .pt-5 {
+    padding-top: 0rem!important;
+    }
+    /*h4 {
+    font: 500 38px/39px 'chronicledisplay-bold';
+    display: inline-block;
+    }*/
+    hr {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    }
+    .solomovil {
+    display: none;
+    }  
+    .box-crema {
+    padding: 20px 20px 10px 20px;
+    margin-top: 0px;
+    }   
+    .parrafo-1crema {
+        font: 500 18px/17px 'georgia-bold';
+    }
+    .protagonista {
+    padding-bottom: 20px;
+    max-width: 150px;
+    display: block;
+    }
+    /*h3 {
+    font: 500 25px/30px 'chronicledisplay-bold';
+    margin: 0px 0px 20px 0px;
+    }*/
+    #social ul li {
+        margin-right: 5px;
+    }
+    .titulo{
+        font: 500 31px/41px 'chronicledisplay-bold';
+    }
+    .bajada{
+        font: 500 16px/19px 'roboto-light';
+        width: 85%;
+    }
+    .grid{
+        margin: 10px auto 30px auto;
+    }
+    .autor{
+        font: 500 20px/20px 'chronicledisplay-bold';
+    }
+    .intro-subtitle{
+        font: 500 26px/27px 'chronicledisplay-italic';
+    }
+    .intro-subtitle, .intro-anio {
+        color: #000;
+    }
+    .intro-anio {
+        font: 500 26px/27px 'chronicledisplay-italic';
+    }
+    .intro-creditos{
+        font: 500 17px/21px 'chronicledisplay-light';
+        color: #000;
+    }
+        .intro-creditos span{
+        font: 500 17px/21px 'chronicledisplay-bold';
+        font-style: italic;
+        }
+    .titulo-nota{
+        font: 500 30px/26px 'chronicledisplay-bold';
+    }
+    .leyenda{
+        font: 500 12px/15px 'roboto-medium';
+        padding-right: 0px;
+    }
+
+    .proceso-tipo p{
+        font-size: 40px;
+    }
+    .big-letra {
+        font-size: 26px;
+        line-height: 35px;
+    }
+    .insight-bold {
+        font-size: 38px;
+        line-height: 42px;
+    }
+    .insight-detalle {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    h3{
+        font-size: 22px;
+    }
+    h2{
+        font-size: 36px;
+    }
+    .prop-de-valor{
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .prop-de-valor span{
+        font-size: 28px;
+    }
+    .idea-slogan p {
+        font-size: 23px;
+    }
+    .idea-slogan span{
+        font-size: 51px;
+    }
+    .titulo-enfatiz{
+        font-size: 40px;
+    }
+    .movil-que-es{
+        margin-top: 50px;
+    }
+
+    .que-es-zoe p {
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .pilares-movil{
+        margin-bottom: 60px;
+    }
+    .pilares span{
+        margin-bottom: 5px;
+    }
+    .pilares p{
+        width: 70%;
+        margin: auto;
+    }
+    /*.parrafo{
+        font: 500 16px/22px 'roboto-regular';
+    }*/
+}
+
+
+@media screen and (min-width: 640px) {
+    .solodesktop {
+    display: none;
+    }  
+}
+
+@media screen and (max-width: 375px) {
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
