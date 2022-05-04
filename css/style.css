@@ -7,6 +7,14 @@ body{
     -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box;
 }
+.cuadros{
+  background: linear-gradient(90deg, #fff 21px, transparent 1%) center, linear-gradient(#fff 21px, transparent 1%) center, #0b0b0d;
+  background-size: 22px 22px;
+
+    /*background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC);*/
+    /*opacity: 0.5;*/
+    /*background-size: ;*/
+}
 a{
     text-decoration: none;
 }
@@ -568,6 +576,13 @@ ul>li{
     background-color: #ffd543;
     color: rgba(0, 0, 0, 0.8);
 }
+.curly-section.blue{
+    background-color: #1E2737;
+    margin-bottom: -80px;
+    padding-top: 100px;
+    padding-bottom: 180px;
+    color: rgba(0, 0, 0, 0.8);
+}
 .card{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -746,6 +761,35 @@ ul>li{
           animation: heading-after 4s ease infinite;
 }
 
+.txt-anima2 {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  /*font-size: 24px;*/
+  /*margin-bottom: 40px;*/
+}
+.txt-anima2:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -20px;
+  height: 2px;
+  background-color: #fff;
+  -webkit-animation: heading-before 4s ease infinite;
+          animation: heading-before 4s ease infinite;
+}
+.txt-anima2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  height: 2px;
+  background-color: #fff;
+  -webkit-animation: heading-after 4s ease infinite;
+          animation: heading-after 4s ease infinite;
+}
+
 /*//////// Animations ////////*/
 @-webkit-keyframes heading-before {
   0% {
@@ -909,6 +953,111 @@ footer p{
     font-size: 15px;
 }
 /*----------FIN PARA MI PORTAFOLIO-------*/
+
+/*----------INICIO DE FLEX PLACE-------*/
+.flex-ins{
+    margin-bottom: 50px;
+}
+.hmw-flex{
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+.ideaSoluc{
+    background-color: #cee7f6;
+    padding: 15px 25px 15px 25px;
+    border-radius: 20px;
+}
+.flexProtoNam{
+    font-size: 34px;
+}
+.prot1{
+}
+.prot1 strong{
+    color: #000;
+}
+.prot2{
+    margin-bottom: 2px;
+}
+.prot3{
+    font-style: italic;
+    font-family: "GuardianEgyp-Regular";
+    font-size: 24px;
+}
+.prot4{
+    
+}
+.prot4 li{
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 12px;
+}
+.marco-pros{
+    border: 1px solid #000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    /*background: #90D2CD;*/
+    /*background: #90D2CD;*/
+
+}
+.mpros-bottom{
+    margin-bottom: 60px;
+}
+.flex-opinion{
+    background-color: #f8f8f8;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-bottom: 80px;
+    /*margin-top: 80px;*/
+}
+.base{
+    width: 950px;
+    height: 500px;
+    background-color: red;
+    margin: auto;
+}
+.proceso-tipo2{
+    background: #1E2737;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    display: table;
+}
+.proceso-tipo2 p{
+    color: #90D2CD;
+    text-align: center;
+    font-family: 'guardianegyp-bold';
+    font-size: 52px;
+}
+.whiteletra{
+    color: white;
+}
+.mini-title-flex{
+    font-family: "GuardianEgyp-Regular";
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: uppercase;
+}
+.arq-top{
+    margin-top: 75px;
+}
+.flex-mb1{
+    margin-bottom: 60px;
+}
+
+/**/
+
+/**/
+
+
+
+/*----------FIN DE FLEX PLACE-------*/
+
+
+
 
 
 /* Fin Grid */
@@ -1077,6 +1226,8 @@ footer p{
         font: 500 16px/22px 'roboto-regular';
     }*/
 }
+
+/*Fila-1 Fila-2 tiene propiedades para que cuadre*/
 
 
 @media screen and (min-width: 640px) {

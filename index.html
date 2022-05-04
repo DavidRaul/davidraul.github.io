@@ -1,116 +1,469 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>David Raul Quispe Soncco</title>
-		<meta name="description" content="About David Raul Quispe Soncco " />
-		<meta name="keywords" content="UX, UX Designer, Front End Developer, Maquetacion, HTML5, javascript" />
-		<meta name="author" content="dvr52" />
-		<link rel="shortcut icon" href="favicon.ico">
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400|Montserrat:700" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="pater/pater.css" />
-		<script>document.documentElement.className = 'js';</script>
-		
-		
-	</head>
-	<body class="demo-1">
-		<svg class="hidden">
-			<symbol id="icon-arrow" viewBox="0 0 24 24">
-				<title>arrow</title>
-				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
-			</symbol>
-			<symbol id="icon-drop" viewBox="0 0 24 24">
-				<title>drop</title>
-				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
-			</symbol>
-			<symbol id="icon-github" viewBox="0 0 32.6 31.8">
-				<title>github</title>
-				<path d="M16.3,0C7.3,0,0,7.3,0,16.3c0,7.2,4.7,13.3,11.1,15.5c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4C7.4,10.7,6.8,9,7.7,6.8c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C32.6,7.3,25.3,0,16.3,0z"/>
-			</symbol>
-			<symbol id="icon-keyboard" viewBox="0 0 100 70">
-				<title>keyboard</title>
-				<!-- https://thenounproject.com/term/keyboard/783/ by Paul te Kortschot from the Noun Project -->
-				<path d="M 60.94,1.83 39.22,1.83 C 36.71,1.83 34.67,3.86 34.67,6.376 L 34.67,28.1 C 34.67,30.61 36.71,32.65 39.22,32.65 L 60.94,32.65 C 63.45,32.65 65.5,30.61 65.5,28.1 L 65.5,6.376 C 65.5,3.86 63.45,1.83 60.94,1.83 Z M 44.79,18.63 50.08,11.74 55.37,18.63 Z" opacity="0.2"/>
-				<path d="M 60.86,36.75 39.14,36.75 C 36.63,36.75 34.59,38.79 34.59,41.3 L 34.59,63.02 C 34.59,65.53 36.63,67.57 39.14,67.57 L 60.86,67.57 C 63.38,67.57 65.41,65.53 65.41,63.02 L 65.41,41.3 C 65.42,38.79 63.38,36.75 60.86,36.75 Z M 50.08,57.45 44.79,50.55 55.37,50.55 Z" opacity="0.2" />
-				<path d="M 95.45,36.75 73.73,36.75 C 71.22,36.75 69.18,38.79 69.18,41.3 L 69.18,63.02 C 69.18,65.53 71.22,67.57 73.73,67.57 L 95.45,67.57 C 97.97,67.57 100,65.53 100,63.02 L 100,41.3 C 100,38.79 97.97,36.75 95.45,36.75 Z M 83.4,57.45 83.4,46.86 90.3,52.16 Z" />
-				<path d="M 26.27,36.75 4.55,36.75 C 2.037,36.75 0,38.79 0,41.3 L 0,63.02 C 0,65.53 2.037,67.57 4.55,67.57 L 26.27,67.57 C 28.78,67.57 30.82,65.53 30.82,63.02 L 30.82,41.3 C 30.82,38.79 28.78,36.75 26.27,36.75 Z M 16.69,57.45 9.79,52.16 16.69,46.86 Z" />
-			</symbol>
-		</svg>
-		<main class="main main--demo-1">
-			<!-- <div class="content content--fixed">
-				<header class="codrops-header">
-					<div class="codrops-links">
-						<a class="codrops-icon codrops-icon--prev" href="https://tympanus.net/Development/LiquidDistortion/" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
-						<a class="codrops-icon codrops-icon--drop" href="https://tympanus.net/codrops/?p=32699" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
-					</div>
-					<h1 class="codrops-header__title">SVG Shape Overlays</h1>
-				</header>
-				<a class="github" href="https://github.com/ykob/shape-overlays" title="Find this project on GitHub"><svg class="icon icon--github"><use xlink:href="#icon-github"></use></svg></a>
-				<nav class="demos">
-					<svg class="icon icon--keyboard"><use xlink:href="#icon-keyboard"></use></svg>
-					<a class="demo demo--current" href="index.html"><span>Demo 1</span></a>
-					<a class="demo" href="index2.html"><span>Demo 2</span></a>
-					<a class="demo" href="index3.html"><span>Demo 3</span></a>
-					<a class="demo" href="index4.html"><span>Demo 4</span></a>
-					<a class="demo" href="index5.html"><span>Demo 5</span></a>
-					<a class="demo" href="index6.html"><span>Demo 6</span></a>
-				</nav>
-				<a class="pater" href="http://synd.co/2zdccEA" rel="nofollow" onClick="recordOutboundLink(this, 'Outbound Links', 'HelloSignSyndicate17102017');return false;">
-					<div class="pater__img"></div>
-					<h3 class="pater__title">​HelloSign API:<br/> The dev friendly eSign</h3>
-					<p class="pater__description">Embed HelloSign API into your app in minutes, with just a few lines of code.</p>
-				</a> 
-			</div> -->
-			<div class="content content--demo-1">
-				<div class="hamburger js-hover">
-					<div class="hamburger__line hamburger__line--01">
-						<div class="hamburger__line-in hamburger__line-in--01"></div>
-					</div>
-					<div class="hamburger__line hamburger__line--02">
-						<div class="hamburger__line-in hamburger__line-in--02"></div>
-					</div>
-					<div class="hamburger__line hamburger__line--03">
-						<div class="hamburger__line-in hamburger__line-in--03"></div>
-					</div>
-					<div class="hamburger__line hamburger__line--cross01">
-						<div class="hamburger__line-in hamburger__line-in--cross01"></div>
-					</div>
-					<div class="hamburger__line hamburger__line--cross02">
-						<div class="hamburger__line-in hamburger__line-in--cross02"></div>
-					</div>
-				</div>
-				<!-- <div class="demo-title demo-title--demo-1">
-					<p>David Raul Quispe Soncco</p>
-					<p>UX Designer & Front End Developer</p>
-				</div> -->
-				<div class="portfolio-home">
-					<strong>Hola! </strong>
-					<p>Soy David Raul Quispe Soncco</p>
-					<p>UX Designer &  Maquetador Web</p>
-					<label>"I help turn good ideas into practical websites."</label>
-				</div>
-				<div class="global-menu">
-					<div class="global-menu__wrap">
-						<a class="global-menu__item global-menu__item--demo-1" href="index.html">Home</a>
-						<a class="global-menu__item global-menu__item--demo-1" href="about.html">About me</a>
-						<!-- <a class="global-menu__item global-menu__item--demo-1" href="#">Products</a> -->
-						<a class="global-menu__item global-menu__item--demo-1" href="portfolio.html">Portfolio</a>
-						<a class="global-menu__item global-menu__item--demo-1" href="contact.html">Contact</a>
-												
-					</div>
-				</div>
-				<svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
-					<path class="shape-overlays__path"></path>
-					<path class="shape-overlays__path"></path>
-					<path class="shape-overlays__path"></path>
-				</svg>
-			</div>
-		</main>
-		<script src="js/demo.js"></script>
-		<script src="js/easings.js"></script>
-		<script src="js/demo1.js"></script>
-	</body>
+<html lang="es">
+<head>
+
+<meta charset="utf-8"/>
+<title>David Raul Quispe Soncco | UX Designer | Lima Peru</title>
+<meta content=" Soy UX Designer y Maquetador web creando proyectos geniales en Lima, Perú " name="description"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <!--favicon-->
+        <link href="https://raw.githubusercontent.com/DavidRaul/davidraul.github.io/master/img/clinica/favicon.png" rel="shortcut icon" type="image/png"/>
+        <link href="https://raw.githubusercontent.com/DavidRaul/davidraul.github.io/master/img/clinica/favicon.png" rel="icon" type="image/png"/>
+        <!-- Open Graph -->
+        <meta content="website" property="og:type"/>
+        <meta content="davidraul.github.io" property="og:site_name"/>
+        <meta content="David Raul Quispe Soncco | UX Designer | Lima Peru" property="og:title"/>
+        <meta content="Soy UX Designer y Maquetador web creando proyectos geniales en Lima, Perú" property="og:description"/>
+        <meta content="https://especiales.elcomercio.pe/?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/index.html" property="og:url"/>
+        <meta content="https://raw.githubusercontent.com/DavidRaul/davidraul.github.io/master/img/clinica/200x200.jpg" property="og:image"/>
+        <!-- fin Open Graph -->
+        <!-- Twitter Card -->
+        <meta content="summary" name="twitter:card"/>
+        <meta content="David Raul Quispe Soncco | UX Designer | Lima Peru" name="twitter:title"/>
+        <meta content="Soy UX Designer y Maquetador web creando proyectos geniales en Lima, Perú" name="twitter:description"/>
+        <!-- fin Twitter Card -->
+        <meta content="David Raul Quispe Soncco, UX Perú, UX Designer Lima Peru, UX 2022" name="keywords"/>
+        <meta content="David Raul Quispe Soncco, UX Perú, UX Designer Lima Peru, UX 2022" name="news_keywords"/>
+        <meta content="es" name="language"/>
+        <meta content="2022-03-06T17:17:12-05:00" name="bi3dPubDate"/>
+        <meta content="index,follow" name="robots"/>
+        <meta content="index, follow" name="googlebot"/>
+        <meta content="David Raul Quispe Soncco" name="organization"/>
+        <meta content="2022-03-29T17:17:12-05:00" property="article:modified_time"/>
+        <meta content="David Raul Quispe Soncco | UX Designer | Lima Peru" property="article:section"/>
+        <meta content="David Raul Quispe Soncco" name="author"/>
+        <meta content="David Raul Quispe Soncco" name="Origen"/>
+        <meta content="Lima, Peru" name="locality"/>
+        <meta content="1 day" name="revisit-after"/>
+        <meta content="David Raul Quispe Soncco" property="og:site_name"/>
+<link href="https://especiales.elcomercio.pe/?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/index.html" rel="canonical"/>
+<!-- estilos -->
+<link href="https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css?007">
+<link rel="stylesheet" href="css/canvas.css">
+
+<script async="" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"> </script>
+<script src="https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/js/ads-072020.js"></script>
+<script type="text/javascript">
+            if (screen.width <= 640) {
+                window.location = "https://especiales.elcomercio.pe/?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/movil/index.html";
+            }
+</script>
+</head>
+<body class="cuadros">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-KKXTKGP" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+        <header>
+            <div class="header-comercio">
+                <div class="ctn-header-comercio">
+                    <!-- <a class="logo-comercio" href="https://elcomercio.pe/" target="blank"><i class="icon-logoEc"></i></a> -->
+                    <a class="boton-especiales" href="https://www.linkedin.com/in/davidraul/" target="blank"> <!-- <i class="cruz"> --></i> David Raul | UX Designer & Maquetador Web </a>
+                    <div id="social">
+                        <ul>
+                            <li>
+                                <a class="ico-linkedin" href="https://www.linkedin.com/in/davidraul/"  title="linkedin" target="blank">
+                                    <img src="img/clinica/ico-linkedin.png" alt="">
+                                    <!-- <i class="icon-facebook"></i> -->
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <!--ctn-header-->
+            </div>
+            <!--header-->
+        </header>
+<section class="container-top">
+</section>
+
+<div class="container mx-auto">
+    <div class="row auspicios mx-auto my-4">
+        <!-- <div class="col-4 px-4 d-flex align-items-center">
+            <a href="#">Acerca de mi</a>
+            <img alt="Bicentenario" class="img-fluid" src="img/bicentenario.png"/>
+        </div>
+        <div class="col-4 px-4 d-flex align-items-center">
+            <a href="#">ToolKit</a>
+            <img alt="Movistar" class="img-fluid" src="img/movistar.png"/>
+        </div>
+        <div class="col-4 px-4 d-flex align-items-center">
+            <a href="#">Articulos</a>
+            <img alt="MAC Lima" class="img-fluid" src="img/mac.png"/>
+        </div> -->
+    </div>
+<div class="cont-titulo text-center">
+<h1 class="titulo mb-0">Hola, mi nombre es David Raul Quispe Soncco </h1>
+<p class="bajada">Soy UX designer y Maquetador Web creando proyectos geniales en Lima, Perú</p>
+<p class="bajada person">- Textos por <strong>Jorge Paredes</strong> -</p>
+</div>
+<div class="cont-selecciona my-4 pt-2 text-center">
+<img alt="Selecciona" class="img-fluid d-block mx-auto" src="img/selecciona.png"/>
+<span class="selecciona d-inline-block">Selecciona una proyecto</span>
+</div>
+<div class="grid">
+    <!-- <div class="row py-2 fila-1">
+        <div class="col-4 px-2">
+        <div class="content position-relative">
+        <a href="antonio-paucar-nndd-ecvisual-ecpm/index.html">
+        <div class="content-overlay"></div>
+        <img alt="" class="img-fluid" src="img/posters/1.png"/>
+        <div class="content-details position-absolute w-100 px-4 fadeIn-bottom">
+        <h3 class="content-title">Antonio Paucar</h3>
+        <h3 class="content-subtitle">“Sálvese quien pueda”</h3>
+        <span class="content-anio">2020</span>
+        <p class="content-creditos font-italic">Fotografía 100 cm x 150 cm. Foto: Eduardo Laurente Gonzales (cortesía del artista y la galería Ginsberg).</p>
+        </div>
+        </a>
+        </div>
+        </div>
+
+        <div class="col-4 px-2">
+        <div class="content position-relative">
+        <a href="https://especiales.elcomercio.pe?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/susana-torres-nndd-ecvisual-ecpm/index.html">
+        <div class="content-overlay"></div>
+        <img alt="" class="img-fluid" src="img/posters/2.png"/>
+        <div class="content-details position-absolute w-100 px-4 fadeIn-bottom">
+        <h3 class="content-title">Susana Torres</h3>
+        <h3 class="content-subtitle">“Tapado II”</h3>
+        <span class="content-anio">2020</span>
+        <p class="content-creditos font-italic">Cerámica (huaco autorretrato) envuelta en gasas.</p>
+        </div>
+        </a>
+        </div>
+        </div>
+        <div class="col-4 px-2">
+        <div class="content position-relative">
+        <a href="https://especiales.elcomercio.pe?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/primitivo-evanan-y-valeriana-evanan-nndd-ecvisual-ecpm/index.html">
+        <div class="content-overlay"></div>
+        <img alt="" class="img-fluid" src="img/posters/3.png"/>
+        <div class="content-details position-absolute w-100 px-4 fadeIn-bottom">
+        <h3 class="content-title">Primitivo
+        Evanán y
+        Valeriana
+        Evanán</h3>
+        <h3 class="content-subtitle">“Tayta Warmichurinwan
+        COVID-19 Tiempopi”</h3>
+        <span class="content-anio">2020</span>
+        <p class="content-creditos font-italic">Técnica ancestral de las tablas de Sarhua</p>
+        </div>
+        </a>
+        </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="row py-2 fila-2">
+        <div class="col-8 px-2 d-flex align-items-end">
+        <div class="content position-relative">
+        <a href="https://especiales.elcomercio.pe?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/santiago-yahuarcani-nndd-ecvisual-ecpm/index.html">
+        <div class="content-overlay"></div>
+        <img alt="" class="img-fluid" src="img/posters/4.png"/>
+        <div class="content-details position-absolute w-100 px-4 fadeIn-bottom">
+        <h3 class="content-title">Santiago Yahuarcani</h3>
+        <h3 class="content-subtitle">“El covid-19 pelea
+        contra los abuelos”</h3>
+        <span class="content-anio">2020</span>
+        <p class="content-creditos font-italic">Tintes naturales y acrílico
+        sobre llanchama</p>
+        </div>
+        </a>
+        </div>
+        </div>
+
+        <div class="col-4 px-2 d-flex align-items-end">
+        <div class="content position-relative">
+        <a href="https://especiales.elcomercio.pe?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/javier-silva-meinel-nndd-ecvisual-ecpm/index.html">
+        <div class="content-overlay"></div>
+        <img alt="" class="img-fluid" src="img/posters/5.png"/>
+            
+        <div class="content-details position-absolute w-100 px-4 fadeIn-bottom">
+        <h3 class="content-title">Javier Silva Meinel</h3>
+        <h3 class="content-subtitle-peq">1. “Paisaje intervenido”<br> <span>(Sequión, Paracas, Ica, 2005 )</span><br>
+        2. “Sombra”<br> <span>(Los Órganos, Piura, 2017 )</span><br>
+        3. “Toda luz”<br> <span>(Los Órganos, Piura, 2019 )</span><br>
+        4. “Pez”<br> <span>(Los Órganos, Piura, 2019 )</span></h3>
+        </div>
+            
+        </a>
+        </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="row py-2">
+        <div class="col-3 px-2">
+        <div class="content position-relative">
+        <a href="https://especiales.elcomercio.pe?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/gerardo-chavez-nndd-ecvisual-ecpm/index.html">
+        <div class="content-overlay"></div>
+        <img alt="" class="img-fluid" src="img/posters/6.png"/>
+        <div class="content-details position-absolute w-100 px-4 fadeIn-bottom">
+        <h3 class="content-title">Gerardo Chávez</h3>
+        <h3 class="content-subtitle">“El otro Ekeko”</h3>
+        <span class="content-anio">1991</span>
+        <p class="content-creditos font-italic">Tierra natural y carbón vegetal sobre tela de yute, 450 x 440 cm.</p>
+        </div>
+        </a>
+        </div>
+        </div>
+
+        <div class="col-6 px-2">
+        <div class="content position-relative">
+        <a href="https://especiales.elcomercio.pe?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/silvia-westphalen-nndd-ecvisual-ecpm/index.html">
+        <div class="content-overlay"></div>
+        <img alt="" class="img-fluid" src="img/posters/7.png"/>
+        <div class="content-details position-absolute w-100 px-4 fadeIn-bottom">
+        <h3 class="content-title">Silvia Westphalen</h3>
+        <h3 class="content-subtitle">“Dibujo de cuarentena”</h3>
+        <span class="content-anio">2020</span>
+        <p class="content-creditos font-italic">Lápiz y lápices de color sobre cartulina, (díptico) 28 x 48,4 cm.</p>
+        </div>
+        </a>
+        </div>
+        </div>
+
+        <div class="col-3 px-2">
+        <div class="content position-relative">
+        <a href="https://especiales.elcomercio.pe?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/flavia-gandolfo-nndd-ecvisual-ecpm/index.html">
+        <div class="content-overlay"></div>
+        <img alt="" class="img-fluid" src="img/posters/8.png"/>
+        <div class="content-details position-absolute w-100 px-4 fadeIn-bottom">
+        <h3 class="content-title">Flavia Gandolfo</h3>
+        <h3 class="content-subtitle">“Detras”</h3>
+        <span class="content-anio">2020</span>
+        <p class="content-creditos font-italic">1993 ( 2021 ) 48,7 x 46 cm. Impresión por inyección de tinta sobre papel de algodón.</p>
+        </div>
+        </a>
+        </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="row py-2">
+        <div class="col-4 px-2">
+        <div class="content position-relative">
+        <a href="https://especiales.elcomercio.pe?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/lastenia-canayo-nndd-ecvisual-ecpm/index.html">
+        <div class="content-overlay"></div>
+        <img alt="" class="img-fluid" src="img/posters/9.png"/>
+        <div class="content-details position-absolute w-100 px-4 fadeIn-bottom">
+        <h3 class="content-title">Lastenia Canayo</h3>
+        <h3 class="content-subtitle">“El dueño de corona birus”</h3>
+        <span class="content-anio">2020</span>
+        <p class="content-creditos font-italic">Acrílico sobre tela, 42 x 34 cm. Colección Christian Bendayán.</p>
+        </div>
+        </a>
+        </div>
+        </div>
+
+        <div class="col-8 px-2">
+        <div class="content position-relative">
+        <a href="https://especiales.elcomercio.pe?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/nani-cardenas-nndd-ecvisual-ecpm/index.html">
+        <div class="content-overlay"></div>
+        <img alt="" class="img-fluid" src="img/posters/10.png"/>
+        <div class="content-details position-absolute w-100 px-4 fadeIn-bottom">
+        <h3 class="content-title">Nani Cárdenas</h3>
+        <h3 class="content-subtitle">“Celosía”</h3>
+        <span class="content-anio">2020</span>
+        <p class="content-creditos font-italic">Tejido en cobre y bronce en acrílico calado. Fotografía: Juan Pablo Murrugarra.</p>
+        </div>
+        </a>
+        </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="row py-2">
+        <div class="col-6 px-2">
+        <div class="content position-relative">
+        <a href="https://especiales.elcomercio.pe?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/mariella-agois-nndd-ecvisual-ecpm/index.html">
+        <div class="content-overlay"></div>
+        <img alt="" class="img-fluid" src="img/posters/11.png"/>
+        <div class="content-details position-absolute w-100 px-4 fadeIn-bottom">
+        <h3 class="content-title">Mariella Agois</h3>
+        <h3 class="content-subtitle">“Pliegue 45”</h3>
+        <span class="content-anio">2020</span>
+        <p class="content-creditos font-italic">Acrílico sobre lienzo 200 x 200 cm</p>
+        </div>
+        </a>
+        </div>
+        </div>
+
+        <div class="col-6 px-2">
+        <div class="content position-relative">
+        <a href="https://especiales.elcomercio.pe?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/alberto-casari-nndd-ecvisual-ecpm/index.html">
+        <div class="content-overlay"></div>
+        <img alt="" class="img-fluid" src="img/posters/12.png"/>
+        <div class="content-details position-absolute w-100 px-4 fadeIn-bottom">
+        <h3 class="content-title">Alberto Casari</h3>
+        <h3 class="content-subtitle">“Helicóptero / columna”</h3>
+        <span class="content-anio">2020</span>
+        <p class="content-creditos font-italic">Madera pintada y laqueada 210 x 145 x 145 cm</p>
+        </div>
+        </a>
+        </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="row py-2">
+        <div class="col-4 px-2">
+        <div class="content position-relative">
+        <a href="https://especiales.elcomercio.pe?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/moico-yaker-nndd-ecvisual-ecpm/index.html">
+        <div class="content-overlay"></div>
+        <img alt="" class="img-fluid" src="img/posters/13.png"/>
+        <div class="content-details position-absolute w-100 px-4 fadeIn-bottom">
+        <h3 class="content-title">Moico Yaker</h3>
+        <h3 class="content-subtitle">“ALDABA”</h3>
+        <span class="content-anio">2020</span>
+        <p class="content-creditos font-italic">Óleo sobre tela, 172 x 137 cm. Foto: Juan Carlos Muñoz Nájar</p>
+        </div>
+        </a>
+        </div>
+        </div>
+
+        <div class="col-4 px-2">
+        <div class="content position-relative">
+        <a href="https://especiales.elcomercio.pe?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/josue-sanchez-nndd-ecvisual-ecpm/index.html">
+        <div class="content-overlay"></div>
+        <img alt="" class="img-fluid" src="img/posters/14.png"/>
+        <div class="content-details position-absolute w-100 px-4 fadeIn-bottom">
+        <h3 class="content-title">Josué Sánchez</h3>
+        <h3 class="content-subtitle">“Fragmentos”</h3>
+        <span class="content-anio">2020</span>
+        <p class="content-creditos font-italic">Acrílico sobre lienzo, 72 x 104 cm</p>
+        </div>
+        </a>
+        </div>
+        </div>
+
+        <div class="col-4 px-2">
+        <div class="content position-relative">
+        <a href="https://especiales.elcomercio.pe?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/natalia-iguiniz-nndd-ecvisual-ecpm/index.html">
+        <div class="content-overlay"></div>
+        <img alt="" class="img-fluid" src="img/posters/15.png"/>
+        <div class="content-details position-absolute w-100 px-4 fadeIn-bottom">
+        <h3 class="content-title">Natalia Iguiñiz</h3>
+        <h3 class="content-subtitle">“Dejo este cuerpo aquí”</h3>
+        <span class="content-anio">2020</span>
+        <p class="content-creditos font-italic">Serigrafía sobre cartón corrugado reciclado</p>
+        </div>
+        </a>
+        </div>
+        </div>
+    </div> -->
+
+    <div class="row py-2">
+        <div class="col-6 px-2">
+            <div class="content position-relative">
+                <a href="uxcase-clinica-san-pablo/index.html">
+                <div class="content-overlay"></div>
+                <img alt="" class="img-fluid" src="img/posters/zoe5.png"/>
+                <div class="content-details position-absolute w-100 px-4 fadeIn-bottom">
+                    <h3 class="content-title">ZOE <br>Clinica San Pablo</h3>
+                    <h3 class="content-subtitle">“Caso de estudio”</h3>
+                    <span class="content-anio">2021</span>
+                    <p class="content-creditos font-italic">Adobes y arena negra (foto: Edi Hirose)</p>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-6 px-2">
+            <div class="content position-relative">
+                <a href="https://especiales.elcomercio.pe?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/teresa-burga-nndd-ecvisual-ecpm/index.html">
+                <div class="content-overlay"></div>
+                <img alt="" class="img-fluid" src="img/posters/flex1.png"/>
+                <div class="content-details position-absolute w-100 px-4 fadeIn-bottom">
+                    <h3 class="content-title">Flex Place</h3>
+                    <h3 class="content-subtitle">“Caso de estudio”</h3>
+                    <span class="content-anio">2021</span>
+                    <p class="content-creditos font-italic">Dibujo, plumones sobre papel.</p>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+<!--  -->
+    <!-- <div class="row py-2">
+        <div class="col-12 px-2">
+            <div class="content position-relative">
+                <a href="https://especiales.elcomercio.pe?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/eduardo-tokeshi-nndd-ecvisual-ecpm/index.html">
+                <div class="content-overlay"></div>
+                <img alt="" class="img-fluid" src="img/posters/poster-19.jpg">
+                <div class="content-details position-absolute w-100 px-4 fadeIn-bottom">
+                    <h3 class="content-title">Eduardo Tokeshi</h3>
+                    <h3 class="content-subtitle">“La distancia”</h3>
+                    <span class="content-anio">2021</span>
+                    <p class="content-creditos font-italic">Óleo sobre panel MDF, 100 cm x 50 cm.</p>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div> -->
+<!--  -->
+
+
+<!--  -->
+<!-- <div class="row py-2">
+    <div class="col-6 px-2">
+    <div class="content position-relative">
+    <a href="https://especiales.elcomercio.pe?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/luz-maria-bedoya-nndd-ecvisual-ecpm/index.html">
+    <div class="content-overlay"></div>
+    <img alt="" class="img-fluid" src="img/posters/18.jpg"/>
+    <div class="content-details position-absolute w-100 px-4 fadeIn-bottom">
+    <h3 class="content-title">Luz María Bedoya</h3>
+    <h3 class="content-subtitle">Cuadernos Loro</h3>
+    <span class="content-anio">2020</span>
+    <p class="content-creditos font-italic">Escritura en acuarela sobre papel.</p>
+    </div>
+    </a>
+    </div>
+    </div>
+
+    <div class="col-6 px-2">
+    <div class="content position-relative">
+    <a href="https://especiales.elcomercio.pe?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/roldan-pinedo-nndd-ecvisual-ecpm/index.html">
+    <div class="content-overlay"></div>
+    <img alt="" class="img-fluid" src="img/posters/poster21.jpg"/>
+    <div class="content-details position-absolute w-100 px-4 fadeIn-bottom">
+    <h3 class="content-title">Roldán Pinedo</h3>
+    <h3 class="content-subtitle">“El canto de las sirenas”</h3>
+    <span class="content-anio">2020</span>
+    <p class="content-creditos font-italic">Acrílico sobre tela, 81 x 60 cm.</p>
+    </div>
+    </a>
+    </div>
+    </div>
+</div> -->
+<!--  -->
+
+<!--  -->
+<!-- <div class="row py-2">
+    <div class="col-12 px-2">
+        <div class="content position-relative">
+            <a href="https://especiales.elcomercio.pe?q=especiales/de-voz-a-voz-peru-arte-peruano-nndd-ecvisual-ecpm/sandra-gamarra-nndd-ecvisual-ecpm/index.html">
+            <div class="content-overlay"></div>
+            <img alt="" class="img-fluid" src="img/posters/poster20.jpg">
+            <div class="content-details position-absolute w-100 px-4 fadeIn-bottom">
+                <h3 class="content-title">Sandra Gamarra</h3>
+                <h3 class="content-subtitle">“S/T (SIN TEMOR)”</h3>
+                <span class="content-anio">2020</span>
+                <p class="content-creditos font-italic">Óleo sobre papel impreso,21 x 30 cm.</p>
+            </div>
+            </a>
+        </div>
+    </div>
+</div> -->
+<!--  -->
+
+</div>
+</div>
+<div class="clear"></div>
+
+<canvas></canvas>
+
+
+
+<script src="https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/js/jquery-3.5.1.min.js"></script>
+<script src="https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
 </html>
