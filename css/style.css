@@ -1134,6 +1134,10 @@ footer p{
         font: 500 16px/19px 'roboto-light';
         width: 85%;
     }
+    .bajada2{
+        font: 500 16px/19px 'georgia-regular';
+        width: 85%;
+    }
     .grid{
         margin: 10px auto 30px auto;
     }
