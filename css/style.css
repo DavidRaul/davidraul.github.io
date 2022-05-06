@@ -1047,6 +1047,16 @@ footer p{
 .flex-mb1{
     margin-bottom: 60px;
 }
+.flex-insights{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.flex-opiniones-final li p{
+    color: white;
+}
+.flex-solucion-mb{
+    margin-bottom: 80px;
+}
 
 /**/
 
