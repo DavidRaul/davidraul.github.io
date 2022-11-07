@@ -339,7 +339,7 @@ class App extends React.Component {
 
   render() {
     return /*#__PURE__*/(
-      React.createElement(MainView, { version: this.props.version, start: "true", title: "JESUS" }));
+      React.createElement(MainView, { version: this.props.version, start: "true", title: "DESPACHADOR1" }));
 
   }}
 

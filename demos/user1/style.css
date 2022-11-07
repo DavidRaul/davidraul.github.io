@@ -20,8 +20,8 @@ html, body {
 body {
     font-weight: 300;
 
-    background-size: cover;
-    background: linear-gradient(rgb(30, 51, 100), rgb(3, 6, 11) 85%) no-repeat;
+   /* background-size: cover;
+    background: linear-gradient(rgb(30, 51, 100), rgb(3, 6, 11) 85%) no-repeat;*/
 
     color: white;
     font-size: 16px;
