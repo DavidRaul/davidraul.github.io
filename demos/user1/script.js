@@ -255,7 +255,7 @@ class MainView extends React.Component {
 
       this.interval = setInterval(() => {
         this.tick();
-      }, 50); // 1000 / 20 = 50 millis repeat
+      }, 100); // 1000 / 20 = 50 millis repeat
 
       this.setState({ running: value });
     } else {
