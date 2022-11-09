@@ -339,7 +339,7 @@ class App extends React.Component {
 
   render() {
     return /*#__PURE__*/(
-      React.createElement(MainView, { version: this.props.version, start: "true", title: "EXPRESS 2" }));
+      React.createElement(MainView, { version: this.props.version, start: "true", title: "EXPRESS 3" }));
 
   }}
 

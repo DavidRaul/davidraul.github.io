@@ -1,5 +1,5 @@
 /**
- * Created by 2D on 04/11/2022.
+ * Created by 2D bajo licencia on 04/11/2022.
  *
  */
 class Utilities {
@@ -339,7 +339,7 @@ class App extends React.Component {
 
   render() {
     return /*#__PURE__*/(
-      React.createElement(MainView, { version: this.props.version, start: "true", title: "DESPACHADOR1" }));
+      React.createElement(MainView, { version: this.props.version, start: "true", title: "EXPRESS 1" }));
 
   }}
 
