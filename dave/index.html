@@ -5,16 +5,41 @@
   <title>Desarrollado por 2D</title>
   <link rel="stylesheet" href="./style.css">
   <style type="text/css">
-    
+    .body,
+    .wrapper {
+      /* Break the flow */
+      position: absolute;
+      top: 0px;
+
+      /* Give them all the available space */
+      width: 100%;
+      height: 100%;
+
+      /* Remove the margins if any */
+      margin: 0;
+
+      /* Allow them to scroll down the document */
+      overflow-y: hidden;
+    }
+
+    .body {
+      /* Sending body at the bottom of the stack */
+      z-index: 1;
+    }
+
+    .wrapper {
+      /* Making the wrapper stack above the body */
+      z-index: 2;
+    }
   </style>
 </head>
 <body class="body">
   <div class="wrapper">
     <!-- partial:index.partial.html -->
     <!-- <div id="root"></div> -->
-    <iframe src="user1/index.html" frameborder="0" width="49%" height="630">
+    <iframe src="user1/index.html" frameborder="0" width="49%" height="100%">
     </iframe>
-    <iframe src="user2/index.html" frameborder="0" width="49%" height="630">
+    <iframe src="user2/index.html" frameborder="0" width="49%" height="100%">
     </iframe>
     <!-- partial -->
   </div>
