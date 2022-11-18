@@ -31,15 +31,19 @@
       /* Making the wrapper stack above the body */
       z-index: 2;
     }
+
+    .hack-frame{
+      height: 100vh !important;
+    }
   </style>
 </head>
 <body class="body">
   <div class="wrapper">
     <!-- partial:index.partial.html -->
     <!-- <div id="root"></div> -->
-    <iframe src="user1/index.html" frameborder="0" width="47%" height="100vh">
+    <iframe src="user1/index.html" class="hack-frame" frameborder="0" width="47%" height="100vh">
     </iframe>
-    <iframe src="user2/index.html" frameborder="0" width="47%" height="100vh">
+    <iframe src="user2/index.html" class="hack-frame" frameborder="0" width="47%" height="100vh">
     </iframe>
     <!-- partial -->
   </div>
