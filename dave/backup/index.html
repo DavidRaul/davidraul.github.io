@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/item-series.js"></script>
+<!-- <script src="https://code.highcharts.com/modules/exporting.js"></script> -->
+<!-- <script src="https://code.highcharts.com/modules/export-data.js"></script> -->
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+<style>
+.highcharts-figure, .highcharts-data-table table {
+    min-width: 320px; 
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+.highcharts-data-table table {
+	font-family: Verdana, sans-serif;
+	border-collapse: collapse;
+	border: 1px solid #EBEBEB;
+	margin: 10px auto;
+	text-align: center;
+	width: 100%;
+	max-width: 500px;
+}
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+.highcharts-data-table th {
+	font-weight: 600;
+    padding: 0.5em;
+}
+.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+    padding: 0.5em;
+}
+.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+
+input[type="number"] {
+	min-width: 50px;
+}
+</style>
+
+<figure class="highcharts-figure">
+    <div>
+        <p>Conozca el perfil de los congresistas virtualmente electos y descubra toda su trayectoria política. Al 100% de actas contabilizadas. <br>Fuente: Onpe</p>
+    </div>
+    <div id="container"></div>
+    <!-- <p class="highcharts-description">
+        Chart showing representatives in the German Parliament. The chart is
+        using the <code>item</code> series type with a semi circle layout.
+        Item charts create a number of items corresponding to the value of
+        each data point.
+
+        Conozca el perfil de los congresistas virtualmente electos y descubra toda su trayectoria política. Al 100% de actas contabilizadas. Fuente: Onpe
+
+    </p> -->
+</figure>
+
+<script>
+	Highcharts.chart('container', {
+
+    chart: {
+        type: 'item'
+    },
+
+    title: {
+        text: 'Elecciones Generales'
+    },
+
+    subtitle: {
+        text: '2020'
+    },
+
+    legend: {
+        labelFormat: '{name} <span style="opacity: 0.4">{y}</span>'
+    },
+
+    series: [{
+        name: 'Representantes',
+        keys: ['name', 'y', 'color', 'label'],
+        data: [
+            ['Accion Popular', 69, '#BE3075', 'Accion Popular'],
+            ['Alianza para el progreso', 153, '#EB001F', 'Alianza para el progreso'],
+            ['Fuerza Popular', 67, '#64A12D', 'Fuerza Popular'],
+            ['Frepap', 80, '#FFED00', 'Frepap'],
+            ['Union por el Peru', 200, '#000000', 'Union por el Peru'],
+            ['Podemos peru', 46, '#008AC5', 'Podemos peru'],
+            ['Somos Peru', 94, '#009EE0', 'Somos Peru']
+        ],
+        dataLabels: {
+            enabled: true,
+            format: '{point.label}'
+        },
+
+        // Circular options
+        center: ['50%', '88%'],
+        size: '170%',
+        startAngle: -100,
+        endAngle: 100
+    }]
+});
+
+
+</script>
+</body>
+</html>
