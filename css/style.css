@@ -90,6 +90,13 @@ url('fonts/GuardianEgyp-Bold.woff2') format('woff2');
         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/ChronicleTextG1-Roman.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 @font-face {
+    font-family: 'KronaOne-Regular';
+    src: url('fonts/KronaOne-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('fonts/KronaOne-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('fonts/KronaOne-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+        url('fonts/KronaOne-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
     font-family: 'chronicledisplay-bold';
     src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/ChronicleDisplay-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/elementos-comunes/fonts/ChronicleDisplay-Bold.woff2') format('woff2'), /* Super Modern Browsers */
@@ -1403,6 +1410,29 @@ footer p{
     .pilares p{
         width: 70%;
         margin: auto;
+    }
+    .mobile-enlaces{
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+    .mobile-enlaces p{
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-family: 'KronaOne-Regular',sans-serif;
+        font-weight: 400;
+        letter-spacing: .04em;
+    }
+    .mobile-enlaces a{
+        font-size: 8px;
+        font-family: 'KronaOne-Regular',sans-serif;
+        text-transform: uppercase;
+        color: #292929;
+        font-weight: bold;
+        border-radius: 5px;
+        /* background: #000; */
+        padding: 8px 8px 8px 8px;
+        border: 2px solid #000;
     }
     /*.parrafo{
         font: 500 16px/22px 'roboto-regular';
