@@ -1084,6 +1084,9 @@ footer p{
     max-width: 90%;
 }
 
+#ct-rp.container{
+    max-width: 95%;
+}
 
 /*----------INICIO DE EL COMERCIO-------*/
 .section-cases{
