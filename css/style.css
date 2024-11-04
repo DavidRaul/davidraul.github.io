@@ -1084,6 +1084,25 @@ footer p{
     max-width: 90%;
 }
 
+#ct-xixie img{
+    display: block;
+    margin: auto;
+}
+
+/*#ct-xixie.container{
+    max-width: 84%;
+}*/
+
+#ct-xixie.container{
+    max-width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    #ct-xixie.container{
+        max-width: 100%;
+    }
+}
+
 #ct-rp.container{
     max-width: 95%;
 }
