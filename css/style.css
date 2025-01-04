@@ -7,6 +7,9 @@ body{
     -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box;
 }
+.bg-upc{
+    background-color: #fdfcf9;
+}
 .cuadros{
   background: linear-gradient(90deg, #fff 21px, transparent 1%) center, linear-gradient(#fff 21px, transparent 1%) center, #0b0b0d;
   background-size: 22px 22px;
@@ -319,6 +322,11 @@ header {
 }
 .container{
     max-width: 1000px;
+}
+.container-small{
+    max-width: 650px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .grid{
     margin: 30px auto 130px auto;
@@ -1168,10 +1176,43 @@ footer p{
 .img-gridp2{
     margin-bottom: 40px;
 }
-
-
 /*----------FIN DE PROCTER-------*/
 
+/*---------- INICIO DE UPC -------*/
+.mt-upc-head{
+    padding-top: 80px;
+}
+.blueUPC-subtitle{
+    color: #35158C;
+}
+.ct-top-nv1{
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.img-radio{
+    border-radius: 16px;
+}
+.btn-25{
+    background-color: #2b074d;
+    color: #fff;
+    padding: 6px 20px 6px 20px;
+    border-radius: 20px;
+    border: 2px solid #2b074d;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    font-weight: bold;
+}
+.btn-25:hover{
+    background-color: #fff;
+    color: #2b074d;
+    border: 2px solid #2b074d;
+}
+/*----------FIN DE UPC -------*/
 
 
 
@@ -1271,6 +1312,8 @@ footer p{
 @media screen and (max-width: 1366px) {
 
 }
+
+/*tamaño tablet*/
 @media screen and (max-width: 1024px) {
     .wfb-tabcalc-wrapper{
         margin: 0 auto;
@@ -1281,7 +1324,13 @@ footer p{
     .lateral-izq, .lateral-der{
         display: none;
     }
-    
+    .container-small p{
+        font-size: 15px;
+        line-height: 175%;
+    }
+    .sm-head-text{
+        font-size: 34px;
+    }
 }
 
 @media screen and (max-width: 768px) {
